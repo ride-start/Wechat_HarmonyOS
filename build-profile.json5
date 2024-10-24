@@ -5,13 +5,13 @@
         "name": "default",
         "type": "HarmonyOS",
         "material": {
-          "certpath": "/Users/haoyue/.ohos/config/default_Wechat_HarmonyOS_CuNIQx5shjBFpVy1fSeYIpSufanKL4hJfSuJYGlelhg=.cer",
-          "storePassword": "0000001BD827C7CCEDFA2462422582C6E96F7977F92B89A653D9CEF0233C5E8289C24354F391D61DCABD2D",
+          "certpath": "C:\\Users\\77586\\.ohos\\config\\default_Wechat_HarmonyOS_MDmdZvFyHOtrKVXErPxhHojp6hNjbJ0Pu54KQjVn-hA=.cer",
+          "storePassword": "0000001A6765378DE70DA29E7F831FEFD07CEC511B0C2970EADB85CED49CF3F424CDAFBF1CDA46D1895D",
           "keyAlias": "debugKey",
-          "keyPassword": "0000001B0675CB8C59B672012134ACEE5B45E8209A178720ACA5EE7E66A4F0C9E16591EEE347BBEF7802F2",
-          "profile": "/Users/haoyue/.ohos/config/default_Wechat_HarmonyOS_CuNIQx5shjBFpVy1fSeYIpSufanKL4hJfSuJYGlelhg=.p7b",
+          "keyPassword": "0000001A92B060F42D5B5B14279353C65D5689A14025227366FAF6650B10D2D86D36E31F88E642C1A6A7",
+          "profile": "C:\\Users\\77586\\.ohos\\config\\default_Wechat_HarmonyOS_MDmdZvFyHOtrKVXErPxhHojp6hNjbJ0Pu54KQjVn-hA=.p7b",
           "signAlg": "SHA256withECDSA",
-          "storeFile": "/Users/haoyue/.ohos/config/default_Wechat_HarmonyOS_CuNIQx5shjBFpVy1fSeYIpSufanKL4hJfSuJYGlelhg=.p12"
+          "storeFile": "C:\\Users\\77586\\.ohos\\config\\default_Wechat_HarmonyOS_MDmdZvFyHOtrKVXErPxhHojp6hNjbJ0Pu54KQjVn-hA=.p12"
         }
       }
     ],

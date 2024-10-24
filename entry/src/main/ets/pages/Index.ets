@@ -16,6 +16,7 @@ struct Index {
   build() {
     Column() {
       Tabs({ barPosition: BarPosition.End, controller: this.tabController }) {
+        //要想切换特定的标签页，需要使用TabsController。TabsController是Tabs组件的控制器，它用于控制Tabs组件进行标签页的切换。使用TabsController的changeIndex方法，可以实现跳转到指定索引值对应的标签页内容
         // 微信（首页）
         TabContent() {
           home()

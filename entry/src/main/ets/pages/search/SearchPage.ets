@@ -31,7 +31,7 @@ export default struct SearchPage {
         Stack() {
           TextInput({ text: this.searchText, placeholder: '搜索', controller: this.controller })
             .placeholderFont({ size: 20, weight: 400 })
-            .caretColor(Color.Green)
+            .caretColor(Color.Green)   //插入指针颜色
             .placeholderColor(Color.Grey)
             .width('100%')
             .height("100%")
@@ -118,7 +118,7 @@ export default struct SearchPage {
               // app退出，一般不会走这里
               this.context.terminateSelf()
             } else {
-              router.back()
+              router.back()    //返回上一级
             }
           })
       }
@@ -191,9 +191,9 @@ export default struct SearchPage {
     .padding({ top: WindowManager.statusBarHeight, bottom: WindowManager.navBarHeight })
     .onKeyEvent((event: KeyEvent) => {
       if (event.type === KeyType.Up) {
-        prompt.showToast({
-          message: "按了返回键"
-        });
+        // prompt.showToast({
+        //   message: "按了返回键"
+        // });
       }
       event.stopPropagation()
     })
