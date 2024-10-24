@@ -67,6 +67,18 @@
           ],
           "when": "inuse"
         }
+      },
+      {
+        // 允许应用获取录音权限  权限为 user_grant 时，还需添加授权原因
+        "name": "ohos.permission.MICROPHONE",
+        "reason": "$string:record_media_permission_reason",
+        "usedScene": {}
+      },
+      {
+        // 允许应用获取蓝牙权限  权限为 user_grant 时，还需添加授权原因
+        "name": "ohos.permission.ACCESS_BLUETOOTH",
+        "reason": "$string:bluetooth_info_permission_reason",
+        "usedScene": {}
       }
     ],
     "deliveryWithInstall": true,

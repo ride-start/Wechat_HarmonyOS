@@ -31,6 +31,15 @@
     {
       "name": "net_info_permission_reason",
       "value": "需要解析网络状态"
+    },
+    {
+      "name": "record_media_permission_reason",
+      "value": "需要进行语音交流"
+    },
+    {
+      "name": "bluetooth_info_permission_reason",
+      "value": "需要蓝牙连接设备"
     }
+
   ]
 }

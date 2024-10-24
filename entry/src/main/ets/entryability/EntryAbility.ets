@@ -4,6 +4,7 @@ import window from '@ohos.window';
 import WindowManager from '../utils/WindowManager';
 import AbilityConstant from '@ohos.app.ability.AbilityConstant';
 import Want from '@ohos.app.ability.Want';
+import {TaoYao} from '@shijing/taoyao';
 
 export default class EntryAbility extends UIAbility {
 
@@ -27,6 +28,21 @@ export default class EntryAbility extends UIAbility {
       }
       hilog.info(0x0000, 'testTag', 'Succeeded in loading the content. Data: %{public}s', JSON.stringify(data) ?? '');
     });
+
+    //申请权限
+    TaoYao.with(this)
+      .runtime()
+        // 要申请的权限
+      .permission(["ohos.permission.INTERNET","ohos.permission.CAMERA","ohos.permission.READ_MEDIA","ohos.permission.WRITE_MEDIA","ohos.permission.GET_NETWORK_INFO","ohos.permission.VIBRATE","ohos.permission.MICROPHONE","ohos.permission.ACCESS_BLUETOOTH"])
+      .onGranted(() => {
+        // 权限申请成功
+        console.log("权限申请成功")
+      })
+      .onDenied(() => {
+        // 权限申请失败
+        console.log("权限申请失败")
+      })
+      .request()
   }
 
   onWindowStageDestroy() {

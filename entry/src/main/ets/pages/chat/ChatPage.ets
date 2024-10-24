@@ -286,6 +286,7 @@ export default struct ChatPage {
   stopRecord = async () => {
     // res 记录录音文件的路径、时长等信息  这里返回是为了实现 发送录音消息
     const res = await AudioCaptureManager.stopRecord()
+    console.log("录音文件信息: " + res.recordFilePath)
     return res
   }
   // 生成声音消息
